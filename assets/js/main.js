@@ -175,7 +175,7 @@
   });
 
   /**
-   * Correct scrolling position upon page load for URLs containing hash links.
+
    */
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
