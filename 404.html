@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found | BITCAPTRA TECHNOLOGY LLP</title>
+
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #37517e, #0ea2bd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container-404 {
+  text-align: center;
+}
+
+.error-number {
+  font-size: 140px;
+  font-weight: 800;
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  padding: 14px 32px;
+  background: white;
+  color: #37517e;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #0ea2bd;
+  color: white;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* floating circles background */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  animation: move 10s linear infinite;
+}
+
+.circle:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 15%;
+}
+
+.circle:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  bottom: 15%;
+  right: 10%;
+}
+
+.circle:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  bottom: 20%;
+  left: 20%;
+}
+
+@keyframes move {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container-404">
+
+  <div class="error-number">404</div>
+
+  <div class="error-title">
+    Page Not Found
+  </div>
+
+  <div class="error-text">
+    Sorry, the page you are looking for doesn't exist or has been moved.
+  </div>
+
+  <a href="index.html" class="home-btn">
+    Go Back Home
+  </a>
+
+</div>
+
+<script>
+
+/* optional auto redirect */
+
+setTimeout(() => {
+  window.location.href = "index.html";
+}, 8000);
+
+</script>
+
+</body>
+</html>
