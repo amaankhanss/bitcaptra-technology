@@ -1,2 +1,1 @@
-The .scss (Sass) files are only available in the pro version.
-You can buy it from: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+hey my self amaan khan and bulid this it compny web site with useing of html css bootstrap and js 

@@ -232,3 +232,25 @@ new Swiper('.clients-slider', {
     1200: { slidesPerView: 6 }
   }
 });
+
+
+// form js
+
+document.getElementById("project inquri form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var formData = new FormData(this);
+
+    fetch("https://formspree.io/f/xojndjjn", {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        alert("Form Submitted Successfully ✅");
+        document.getElementById("contactForm").reset();
+    })
+    .catch(error => alert("Error submitting form"));
+});
+
+
